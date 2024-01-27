@@ -538,11 +538,7 @@ span {
   html {
     font-size: 55%;
   }
-  .project-container {
-    padding-bottom: 7rem;
-    grid-template-columns: repeat(1, fr);
-    margin: 0 5rem;
-  }
+
   .service-container {
     flex-direction: column;
   }
@@ -616,5 +612,33 @@ span {
   .timeline-item:nth-child(odd),
   .timeline-item:nth-child(evem) {
     padding-left: 37px;
+  }
+}
+@media only screen and (max-device-width: 1080px) and (max-device-height: 2340px) {
+  .projects h2 {
+    margin-bottom: 4rem; /* Adjusted margin for smaller screens */
+  }
+  .projects-container {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Adjusted grid layout for smaller screens */
+    gap: 1.5rem; /* Adjusted gap for smaller screens */
+  }
+  .projects-container .projects-box {
+    height: 400px; /* Adjusted height for smaller screens */
+  }
+  .project-info h4 {
+    font-size: 3rem; /* Adjusted font size for smaller screens */
+  }
+  .project-info p {
+    font-size: 1.4rem; /* Adjusted font size for smaller screens */
+  }
+  .project-info a {
+    width: 4rem; /* Adjusted width for smaller screens */
+    height: 4rem; /* Adjusted height for smaller screens */
+  }
+  .project-info a i {
+    font-size: 2.5rem; /* Adjusted icon size for smaller screens */
   }
 }
