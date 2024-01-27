@@ -574,6 +574,7 @@ span {
     border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
     display: none;
   }
+
   .navbar .active {
     display: block;
   }
@@ -626,7 +627,7 @@ span {
     gap: 1.5rem; /* Adjusted gap for smaller screens */
   }
   .projects-container .projects-box {
-    height: 400px; /* Adjusted height for smaller screens */
+    height: 700px; /* Adjusted height for smaller screens */
   }
   .project-info h4 {
     font-size: 3rem; /* Adjusted font size for smaller screens */
@@ -640,5 +641,47 @@ span {
   }
   .project-info a i {
     font-size: 2.5rem; /* Adjusted icon size for smaller screens */
+  }
+}
+@media only screen and (max-device-width: 1080px) and (max-device-height: 2340px) {
+  .projects h2 {
+    margin-bottom: 4rem; /* Adjusted margin for smaller screens */
+  }
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Adjusted grid layout for smaller screens */
+    gap: 1.5rem; /* Adjusted gap for smaller screens */
+  }
+  .projects-container .projects-box {
+    height: 700px; /* Adjusted height for smaller screens */
+  }
+  .project-info h4 {
+    font-size: 3rem; /* Adjusted font size for smaller screens */
+  }
+  .project-info p {
+    font-size: 1.4rem; /* Adjusted font size for smaller screens */
+  }
+  .project-info a {
+    width: 4rem; /* Adjusted width for smaller screens */
+    height: 4rem; /* Adjusted height for smaller screens */
+  }
+  .project-info a i {
+    font-size: 2.5rem; /* Adjusted icon size for smaller screens */
+  }
+
+  /* Center the third project */
+  .projects-container .projects-box:nth-child(3) {
+    grid-column: span 2; /* Span across both columns */
+  }
+
+  /* Center the project info within the box */
+  .projects-container .projects-box .project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
