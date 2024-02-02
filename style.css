@@ -65,7 +65,24 @@ body {
 .navbar.active {
   display: block; /* Show the navigation menu when "active" class is present */
 }
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
 
+.navbar li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black; /* Default color for menu items */
+}
+
+.navbar a.selected {
+  color: red; /* Color for selected menu item */
+}
 #menu-icon {
   font-size: 3.6rem;
   color: var(
@@ -705,5 +722,23 @@ span {
 
   .navbar.active {
     display: block; /* Show the navigation menu when "active" class is present */
+  }
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .navbar li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: black; /* Default color for menu items */
+  }
+
+  .navbar a.selected {
+    color: red; /* Color for selected menu item */
   }
 }
