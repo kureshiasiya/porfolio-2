@@ -58,6 +58,14 @@ body {
   color: var(--min-color);
   border-bottom: 3px solid var(--min-color);
 }
+.navbar {
+  display: none; /* Initially hide the navigation menu */
+}
+
+.navbar.active {
+  display: block; /* Show the navigation menu when "active" class is present */
+}
+
 #menu-icon {
   font-size: 3.6rem;
   color: var(
@@ -104,6 +112,7 @@ span {
   font-size: 1.8rem;
   font-weight: 500;
 }
+
 .socials-icons a {
   display: inline-flex;
   justify-content: center;
@@ -553,12 +562,16 @@ span {
   .service {
     padding-bottom: 7rem;
   }
+  .service-container {
+    flex-direction: column;
+  }
   .footer {
     padding: 2rem 3%;
   }
 }
+
 @media (max-width: 995px) {
-  #meue-icon {
+  #menu-icon {
     display: block;
   }
   .navbar {
