@@ -116,6 +116,7 @@ span {
 .socials-icons a {
   display: inline-flex;
   justify-content: center;
+  align-items: center; /* Center the icons vertically */
   width: 4rem;
   height: 4rem;
   background: transparent;
@@ -126,6 +127,7 @@ span {
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.3s ease;
 }
+
 .socials-icons a:hover {
   color: white;
   transform: scale(1.3) translateY(-5px);
@@ -696,5 +698,12 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .navbar {
+    display: none; /* Initially hide the navigation menu */
+  }
+
+  .navbar.active {
+    display: block; /* Show the navigation menu when "active" class is present */
   }
 }
