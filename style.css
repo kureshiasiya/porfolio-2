@@ -81,8 +81,9 @@ body {
 }
 
 .navbar a.selected {
-  color: red; /* Color for selected menu item */
+  color: black; /* Color for selected menu item */
 }
+
 #menu-icon {
   font-size: 3.6rem;
   color: var(
@@ -739,6 +740,6 @@ span {
   }
 
   .navbar a.selected {
-    color: red; /* Color for selected menu item */
+    color: black; /* Color for selected menu item */
   }
 }
