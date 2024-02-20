@@ -47,7 +47,7 @@ body {
 }
 .navbar a {
   font-size: 1.8rem;
-  color: hsl(0, 0%, 100%);
+  color: white;
   margin-left: 4rem;
   font-weight: 600;
   transition: 0.3s ease;
@@ -80,7 +80,7 @@ body {
   color: black; /* Default color for menu items */
 }
 
-.navbar a.selected {
+.navbar a.selected .navbar a:visited {
   color: black; /* Color for selected menu item */
 }
 
@@ -266,14 +266,14 @@ span {
 }
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
 .projects-container .projects-box {
   position: relative;
   border-radius: 2rem;
-  height: 550px;
+  height: 800px;
   overflow: hidden;
   display: flex;
 }
@@ -331,6 +331,7 @@ span {
   font-size: 3rem;
   color: var(--min-color);
 }
+
 .skills {
   background-color: var(--bg-color);
   margin: 0 auto;
