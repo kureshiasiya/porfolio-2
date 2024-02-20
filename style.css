@@ -705,19 +705,37 @@ span {
   .project-info a i {
     font-size: 2.5rem; /* Adjusted icon size for smaller screens */
   }
-
-  /* Center the third project */
-  .projects-container .projects-box:nth-child(3) {
-    grid-column: span 2; /* Span across both columns */
-  }
-
-  /* Center the project info within the box */
-  .projects-container .projects-box .project-info {
+  .projects-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
   }
+
+  .projects-box {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+
+  /* Optional: Adjustments for smaller screens */
+  @media only screen and (max-width: 1080px) {
+    .projects-box {
+      flex: 0 0 calc(100% - 20px);
+      max-width: calc(100% - 20px);
+    }
+  }
+
+  @media only screen and (max-width: 1080px) and (max-device-width: 1080px) and (orientation: portrait) {
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+
+    .projects-box {
+      max-width: calc(100% - 20px);
+    }
+  }
+
   .navbar {
     display: none; /* Initially hide the navigation menu */
   }
@@ -742,17 +760,5 @@ span {
 
   .navbar a.selected {
     color: black; /* Color for selected menu item */
-  }
-}
-@media only screen and (max-width: 1080px) {
-  .projects-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .projects-box {
-    max-width: 400px;
-    margin: auto;
   }
 }
