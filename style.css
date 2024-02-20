@@ -744,3 +744,15 @@ span {
     color: black; /* Color for selected menu item */
   }
 }
+@media only screen and (max-width: 1080px) {
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .projects-box {
+    max-width: 400px;
+    margin: auto;
+  }
+}
