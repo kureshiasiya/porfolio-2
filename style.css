@@ -278,7 +278,7 @@ span {
   display: flex;
 }
 .projects-box img {
-  height: 50%;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   transition: 0.5s ease;
